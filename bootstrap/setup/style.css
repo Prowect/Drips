@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700);
+
+body {
+	background-color: #C9D1D9;
+	margin: 0;
+	padding: 0;
+	font-family: 'Maven Pro', sans-serif;
+	color: #656E79;
+}
+
+#progress {
+	display: none;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: auto;
+	position: relative;
+}
+
+#header {
+	background-color: #434A54;
+	text-align: center;
+	padding: 35px;
+}
+
+#header img {
+	height: 80px;
+}
+
+.page-header {
+	background-color: #A0D66C;
+	color: white;
+}
+
+.page-header h1 {
+	margin: 0;
+	padding: 15px;
+}
+
+.label {
+	float: right;
+	background-color: #8DC357;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px 25px;
+	margin-right: 10px;
+}
+
+button, .btn {
+	background-color: #A0D66C;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 10px 25px;
+	display: inline-block;
+	text-decoration: none;
+	transition: all 0.2s;
+	font-family: 'Maven Pro', sans-serif !important;
+}
+
+button:hover, .btn:hover {
+	cursor: pointer;
+	background-color: #8DC357;
+}
+
+.content {
+	padding: 15px;
+}
+
+#install-output {
+	font-family: monospace;
+	color: white;
+	background-color: #343434;
+	padding: 10px;
+	overflow-y: scroll;
+	height: 400px;
+}
+
+.success {
+	color: #A0D66C;
+	font-weight: bold;
+}
+
+.info {
+	color: #5BC0E8;
+	font-weight: bold;
+}
+
+.error {
+	color: #E25741;
+	font-weight: bold;
+}
+
+#loading {
+	background-color: #626E7A;
+	text-align: center;
+	padding: 5px 10px;
+	color: #343434;
+	margin-top: -15px;
+}
+
+#loading .fa {
+	margin-right: 10px;
+}
+
+.requirement {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.requirement .fa {
+	font-size: 30px;
+}
+
+#footer {
+	color: #626E7A;
+	text-align: center;
+	padding: 15px;
+}
+
+#footer * {
+	color: #626E7A;
+}
+
+.page {
+	padding-bottom: 75px;
+	background-color: #F3F8FB;
+}

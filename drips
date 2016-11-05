@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+use Illuminate\Contracts\Console\Kernel;
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+define('BOOTSTRAP_DIRECTORY', __DIR__ . DIRECTORY_SEPARATOR . 'bootstrap');
+
+require_once BOOTSTRAP_DIRECTORY . DIRECTORY_SEPARATOR . 'autoload.php';
+
+$app = require_once BOOTSTRAP_DIRECTORY . DIRECTORY_SEPARATOR . 'app.php';
+
+$kernel = $app->make(Kernel::class);
+$input = new ArgvInput;
+$output = new ConsoleOutput;
+$status = $kernel->handle($input, $output);
+
+$kernel->terminate($input, $status);
+exit($status);
