@@ -22,6 +22,11 @@
 			
 		</footer>
 	</div>
+	<script type="text/javascript">
+		window.Laravel = { 
+			csrfToken: "{{ csrf_token() }}"
+		}
+	</script>
 	<script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 	@stack('scripts')
 </body>
