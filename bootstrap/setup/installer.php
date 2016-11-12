@@ -73,7 +73,7 @@ class Installer
 
 		$cmds["Installing dependencies"] = "$composer update";
 		if(!file_exists('.env')){
-			file_put_contents('.env', '');
+			file_put_contents('.env', file_exists('.env.example') ? file_get_contents('.env.example') : '');
 			$cmds["Generate key"] = 'php drips key:generate';
 		}
 
