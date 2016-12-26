@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>{{ config('app.name') }}</title>
+	{{--<meta name="csrf-token" content="{{ csrf_token() }}">--}}
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
 	@stack('styles')
 </head>
